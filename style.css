@@ -1,0 +1,136 @@
+h2 {
+    color: #d4af37;
+}
+
+.portfolio-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-logo:hover {
+    transform: scale(1.05);
+}
+
+.hero {
+    background: linear-gradient(135deg, #0d1117 0%, #1a2a3a 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #d4af37, #fdfbfb, #d4af37, #b8860b, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    animation: colorCycle 5s linear infinite;
+}
+
+@keyframes colorCycle {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    color: #bbb;
+    margin-bottom: 2rem !important;
+}
+
+.highlight-card {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a20) !important;
+    border: 1px solid #444;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-frame {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#111, #111), linear-gradient(135deg, #d4af37, #555);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.profile-frame:hover {
+    transform: scale(1.02);
+}
+
+
+.experience-company {
+    color: #00d2ff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.highlight-text {
+    color: #d4af37;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.project-title {
+    color: #00d2ff;
+    font-weight: bold;
+}
+
+
+.skill-card {
+    background: #1a1a20;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #777;
+}
+
+.btn-resume {
+    background: linear-gradient(90deg, #c0c0c0, #a0a0a0);
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #c0c0c0;
+    transition: all 0.4s ease;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-resume:hover {
+    background: transparent;
+    color: #c0c0c0;
+    border-color: #c0c0c0;
+    box-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
+    transform: translateY(-2px);
+}
+
+
+section {
+    min-height: 40vh;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #444;
+    background: rgba(30, 30, 30, 0.8) !important;
+    backdrop-filter: blur(5px);
+}
